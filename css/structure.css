@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.navBar {
+    width: calc(100% - 2*var(--navBarMargin));
+    display: flex;
+    margin: var(--navBarMargin);
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+
+.navButton {
+    padding: 5px;
+    height: calc(50px * var(--scale));
+    border-radius: 7px;
+    margin: 5px;
+    font-size: calc(15px * var(--scale));
+    white-space: nowrap;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.logoDiv {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.logoImage {
+    height: calc(40px * var(--scale));
+    width: auto;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.logoText {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(15px * var(--scale)); 
+}
+
+.logoTextTop {
+    margin: 0;
+}
+
+.logoTextBottom {
+    margin: 0;
+}
+
+.titleDiv {
+    padding: 20px;
+    text-align: center;
+    padding-top: calc(var(--scale)*100px);
+}
+
+.firstTitle {
+    font-size: calc(70px * var(--scale));
+    margin-bottom: 0;
+}
+
+.secondTitle {
+    font-size: calc(25px * var(--scale));
+    margin-top: 10px;
+}
+
+.firstContentDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: var(--contentPadding);
+    padding-bottom: var(--contentPadding);
+}
+
+.secondContentDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: var(--contentPadding);
+    padding-bottom: var(--contentPadding);
+}
+
+.largeBubble {
+    flex-grow: 2;
+}
+
+.contentTitle {
+    margin: 0;
+    font-size: 35px; 
+}
+.contentText {
+    font-size: 20px;
+}
+.footer {
+    margin-top: 20px;
+    font-size: calc(23px*var(--scale));
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footerText {
+    padding: 2px;
+    font-size: calc(12px*var(--scale));
+    margin: 0;
+}
+.subtitle {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: calc(100px * var(--scale));
+    font-size: calc(50px * var(--scale));
+    text-align: center;
+    margin: 0;
+}
+.contentBox {
+    justify-content: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 450px));
+}
+
+.contentBox>* {
+    font-size: 18px;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: node;
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+}
+
+.what {
+    position: absolute;
+    transform: translate(20%, -80%)
+}
+.warning {
+    position: absolute;
+    margin: 0;
+    font-size: 17px;
+    color: #da8e03;
+}
+@media only screen and (max-width: 668px) {
+    :root {
+        --scale: 0.7;
+        --navBarMargin: 10px;
+        --contentPadding: 12vw;
+    }
+    .navBar {
+        overflow-x: auto;  
+        border-radius: 12px;
+    }
+    .firstContentDiv {
+        clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%)
+    }
+    .secondContentDiv {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%)
+    }
+    .contentBox {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 550px));
+    }
+    .tag {
+        margin-right: 5px;
+        width: 100px;
+    }
+    .what {
+        transform: translate(5%, -80%);
+    }
+}
+
+@media only screen and (min-width: 668px) {
+    :root {
+        --scale: 1;
+        --navBarMargin: 0px;
+        --contentPadding: 6vw;
+    }
+    .firstContentDiv {
+        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%)
+    }
+    .secondContentDiv {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%)
+    }
+}
