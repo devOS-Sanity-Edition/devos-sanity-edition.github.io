@@ -69,7 +69,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 100% 4000%;
-    
+    padding: 5px;
     -webkit-animation: rainbowanim 10s linear infinite;
     -moz-animation: rainbowanim 10s linear infinite;
     animation: rainbowanim 10s linear infinite;
