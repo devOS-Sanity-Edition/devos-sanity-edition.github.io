@@ -9,7 +9,7 @@ export default {
         TopNavbar
     },
     mounted() {
-        this.vantaEffect = Vanta({
+        const vL = Vanta({
             el: "body",
             mouseControls: false,
             touchControls: false,
@@ -23,6 +23,55 @@ export default {
             THREE
             // parameters goes here
         })
+
+        const vD = Vanta({
+            el: "body",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            highlightColor: 0xfc6363,
+            midtoneColor: 0x3cdec1,
+            lowlightColor: 0xd200ff,
+            baseColor: 0x000000,
+            THREE
+            // parameters goes here
+        })
+
+        // Adjust Vanta for system theme
+        if (
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+            console.log("pcs: dark")
+            this.vantaEffect = vD // Dark theme
+        } else if (
+            window.matchMedia &&
+            !window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+            console.log("pcs: light")
+            this.vantaEffect = vL // Light theme
+        }
+
+        // Update if theme changes while website is loaded
+        // window
+        //     .matchMedia("(prefers-color-scheme: dark)")
+        //     .addEventListener("change", (event) => {
+        //         const newColorScheme = event.matches ? "dark" : "light"
+
+        //         if (newColorScheme === "light") {
+        //             console.log("ncs: light")
+        //             this.vantaEffect = vL
+        //         } else if (newColorScheme === "dark") {
+        //             console.log("ncs: dark")
+        //             this.vantaEffect = vD
+        //         } else {
+        //             throw new Error(
+        //                 "Something has gone horribly wrong! Have a chocolate for your troubles"
+        //             )
+        //         }
+        //     })
     }
 }
 </script>
