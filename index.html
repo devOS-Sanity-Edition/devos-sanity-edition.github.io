@@ -1,74 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>devOS: Sanity Edition - Home</title>
-	<link href="./css/theme.css" rel="stylesheet" type="text/css">
-	<link href="./css/structure.css" rel="stylesheet" type="text/css">
-	<link href="./css/fonts/fonts.css" rel="stylesheet" type="text/css" ></link>
-	<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:title" content="devOS: Sanity Edition" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devos.one" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/devOS-Sanity-Edition/devos-sanity-edition.github.io/main/images/thumbnail.png" />
+    <meta property="og:description" content="the weird devOS website." />
 
-	<meta property="og:title" content="devOS: Sanity Edition" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://devos.one" />
-	<meta property="og:image" content="https://raw.githubusercontent.com/devOS-Sanity-Edition/devos-sanity-edition.github.io/main/images/thumbnail.png" />
-	<meta property="og:description" content="the weird devOS website." />
-
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://devos.community">
-	<meta property="twitter:title" content="devOS: Sanity Edition">
-	<meta property="twitter:description" content="the weird devOS website.">
-	<meta property="twitter:image" content="https://raw.githubusercontent.com/devOS-Sanity-Edition/devos-sanity-edition.github.io/main/images/thumbnail.png">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="theme-color" content="#00a86b">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://devos.community">
+    <meta property="twitter:title" content="devOS: Sanity Edition">
+    <meta property="twitter:description" content="the weird devOS website.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/devOS-Sanity-Edition/devos-sanity-edition.github.io/main/images/thumbnail.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#00a86b">
+    <title>devOS: Sanity Edition</title>
 </head>
-
 <body>
-	<div class='navBar'>
-		<!-- <script src="./scripts/arrows.js"></script> -->
-		<div class='logoDiv'>
-			<img src="./images/favicon.png" alt="ZtereoHYPE logo" class="logoImage">
-			<div class="logoText">
-				<p class='logoTextTop'>devOS</p>
-				<p class='logoTextBottom'>Sanity Edition</p>
-			</div>
-		</div>
-		<a href="./index.html"><button class='currentButton navButton'>Home</button></a>
-		<a href="https://github.com/devOS-Sanity-Edition" target="_blank"><button class='currentButton navButton'>GitHub</button></a>
-		<a href="https://mvn.devos.one" target="_blank"><button class='currentButton navButton'>Maven Server</button></a>
-	</div>
-	<div class="titleDiv">
-		<h1 class="firstTitle" id="firstTitle">devOS: Sanity Edition</h1>
-		<h2 class="secondTitle" id="secondTitle">A discord server filled with chaotic people and devs alike. Send help.</h2>
-	</div>
-	<div class="firstContentDiv">
-		<h2 class="contentTitle">What is devOS?</h2>
-		<p class="contentText">devOS is a private Discord community filled from chaotic beans to talented individuals who create software together. 
-			We tend to open source everything we do, but in the rare occasion, make a joke repo or 2 for the hell of it.</p>
-	</div>
-	<div class="secondContentDiv">
-		<h2 class="contentTitle">We're on Modrinth!</h2>
-		<p class="contentText">We make Minecraft mods, and guess what? You can download them! We develop most of our mods under the Team Nautical name. 
-		Feel free to grab em <a href="https://modrinth.com/user/devOS-Nautical" target="_blank">here</a>!</p>
-	</div>
-	<div class="firstContentDiv">
-		<h2 class="contentTitle">What do you all make, and can I join the community?</h2>
-		<p class="contentText">Currently we're waiting on Godot 4.0 to work on our game engine, Tanuki Engine. 
-			We're also working on multiple Minecraft mods, which work on Fabric and Quilt modloaders. You can see everything else we make <a href="https://github.com/devOS-Sanity-Edition" target="_blank">here</a>. 
-			As for joining the community, it is invite only, sorry.</p>
-	</div>
-	</div>
-	<div class="footer">
-		<h3 class="footerTitle">please send help the nooks took my family hostage.</h3>
-		<p class="footerText">
-			<span>MIT Licensed. Copyright 2021-2022 devOS: Sanity Edition</span>
-		</p>
-		<p class="footerText">Thank you <a href="https://github.com/ZtereoHYPE" target="_blank">ZtereoHYPE</a> for the help c:</p>
-	</div>
+<div id="app"></div>
+<script type="module" src="/src/main.ts"></script>
 </body>
-<script src="./scripts/scroll.js"></script>
-
 </html>
