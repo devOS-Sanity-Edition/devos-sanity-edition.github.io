@@ -9,20 +9,20 @@ export default {
         TopNavbar
     },
     mounted() {
-        this.vantaEffect = Vanta({
-            el: "body",
-            mouseControls: false,
-            touchControls: false,
-            gyroControls: false,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            highlightColor: 0xfc6363,
-            midtoneColor: 0x3cdec1,
-            lowlightColor: 0xd200ff,
-            baseColor: 0xffffff,
-            THREE
-            // parameters goes here
-        })
+        // this.vantaEffect = Vanta({
+        //     el: "body",
+        //     mouseControls: false,
+        //     touchControls: false,
+        //     gyroControls: false,
+        //     minHeight: 200.0,
+        //     minWidth: 200.0,
+        //     highlightColor: 0xfc6363,
+        //     midtoneColor: 0x3cdec1,
+        //     lowlightColor: 0xd200ff,
+        //     baseColor: 0xffffff,
+        //     THREE
+        //     // parameters goes here
+        // })
     }
 }
 </script>

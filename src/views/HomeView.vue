@@ -21,7 +21,7 @@ main
     ContentText(
         isLeft = true
         title = "What do you all make, and can I join the community?"
-    ) Currently we're waiting on Godot 4.0 to work on our game engine, Tanuki Engine. We are also working on multiple Minecraft mods, which work on Fabric and Quilt modloaders. You can see everything else we make !{githubLink}. As for joining the community, it is invite only, sorry.
+    ) We're bouncing around projects a lot, some gamedev, some Minecraft mods, nothing really concrete. You can see everything else we make !{githubLink}. As for joining the community, it is invite only, sorry.
     BottomFooter
 </template>
 
