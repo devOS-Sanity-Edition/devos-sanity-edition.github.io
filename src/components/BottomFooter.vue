@@ -6,7 +6,7 @@
 .footer
     h3.footerTitle please send help the nooks took my family hostage
     p.footerText
-        span MIT Licensed. Copyright 2021-2023 devOS: Sanity Edition
+        span MIT Licensed. Copyright 2021-2024 devOS: Sanity Edition
     p.footerText Thank you !{ztereosGithub} for the original site, and !{stormsTwitter} for helping me with Vue! c:
 </template>
 
